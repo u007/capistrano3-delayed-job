@@ -1,9 +1,3 @@
-# REPO MOVED
-
-Thanks to [@rab](https://github.com/rab) for taking over this gem.
-
-Now the code base is in https://github.com/AgileConsultingLLC/capistrano3-delayed-job
-
 # Capistrano::DelayedJob [![Gem Version](https://badge.fury.io/rb/capistrano3-delayed-job.png)](http://badge.fury.io/rb/capistrano3-delayed-job)
 
 Delayed Job support for Capistrano 3.x
@@ -120,7 +114,7 @@ end
 ```
 
 Following setting is recommended to avoid stop/restart problem.
-See [#16](https://github.com/platanus/capistrano3-delayed-job/issues/16) or [#22](https://github.com/platanus/capistrano3-delayed-job/pull/22) for more detail.
+See [Issue #16](https://github.com/platanus/capistrano3-delayed-job/issues/16) or [PR #22](https://github.com/platanus/capistrano3-delayed-job/pull/22) for more detail.
 
 ```ruby
 set: linked_dirs, %w(tmp/pids)
@@ -140,11 +134,13 @@ set :delayed_job_pid_dir, '/tmp'
 
 ## Credits
 
-Thank you [contributors](https://github.com/platanus/capistrano3-delayed-job/graphs/contributors)!
+Thank you [contributors](https://github.com/AgileConsultingLLC/capistrano3-delayed-job/graphs/contributors)!
 
-<img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
+capistrano3-delayed-job is maintained [Rob Biedenharn](https://github.com/rab) and
+![Logo of Agile Consulting LLC](http://agileconsultingllc.com/agile-logo-small.png "Agile Consulting LLC")
 
-capistrano3-delayed-job is maintained by [platanus](http://platan.us).
+Originally developed by [platanus](http://platan.us).
+<img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="125"/>
 
 ## License
 
