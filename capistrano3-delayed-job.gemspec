@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["rob_biedenharn@alum.mit.edu",
                         "juan.ignacio@platan.us", "agustin@platan.us", "ignacio@platan.us"]
   spec.summary       = %q{Adds support for delayed_jobs to Capistrano 3.x}
-  spec.description   = %q{Adds support for delayed_jobs to Capistrano 3.x}
-  spec.homepage      = ""
+  spec.description   = %q{Manage start/stop/restart/status of DelayedJob workers using Capistrano 3}
+  spec.homepage      = "https://github.com/AgileConsultingLLC/capistrano3-delayed-job"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'capistrano', '>= 3.0.0'
+  spec.add_dependency 'capistrano', '~> 3.0', '>= 3.0.0'
 
   spec.add_development_dependency "rake", "~> 10.0"
 end
