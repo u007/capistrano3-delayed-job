@@ -137,10 +137,10 @@ set :delayed_job_pid_dir, '/tmp'
 Thank you [contributors](https://github.com/AgileConsultingLLC/capistrano3-delayed-job/graphs/contributors)!
 
 capistrano3-delayed-job is maintained [Rob Biedenharn](https://github.com/rab) and
-![Logo of Agile Consulting LLC](http://agileconsultingllc.com/agile-logo-small.png "Agile Consulting LLC")
+[![Logo of Agile Consulting LLC](http://agileconsultingllc.com/agile-logo-small.png "Agile Consulting LLC")](http://agileconsultingllc.com/)
 
 Originally developed by [platanus](http://platan.us).
-<img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="125"/>
+[<img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="125"/>](http://platan.us/)
 
 ## License
 
