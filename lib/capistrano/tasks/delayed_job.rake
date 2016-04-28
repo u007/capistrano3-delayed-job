@@ -1,3 +1,7 @@
+# rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
+# rubocop:disable Metrics/PerceivedComplexity, Style/EmptyLinesAroundBlockBody
+# rubocop:disable Style/SpaceInsideParens
+
 namespace :delayed_job do
 
   def delayed_job_args
@@ -8,7 +12,9 @@ namespace :delayed_job do
     args << "--prefix=#{fetch(:delayed_job_prefix)}" unless fetch(:delayed_job_prefix).nil?
     args << "--pid-dir=#{fetch(:delayed_job_pid_dir)}" unless fetch(:delayed_job_pid_dir).nil?
     args << "--log-dir=#{fetch(:delayed_log_dir)}" unless fetch(:delayed_log_dir).nil?
-    args << fetch(:delayed_job_pools, {}).map {|k,v| "--pool='#{k}:#{v}'"}.join(' ') unless fetch(:delayed_job_pools).nil?
+    unless fetch(:delayed_job_pools).nil?
+      args << fetch(:delayed_job_pools, {}).map {|k,v| "--pool='#{k}:#{v}'" }.join(' ')
+    end
     args.join(' ')
   end
 
