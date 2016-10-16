@@ -117,7 +117,7 @@ Following setting is recommended to avoid stop/restart problem.
 See [Issue #16](https://github.com/platanus/capistrano3-delayed-job/issues/16) or [PR #22](https://github.com/platanus/capistrano3-delayed-job/pull/22) for more detail.
 
 ```ruby
-set: linked_dirs, %w(tmp/pids)
+set :linked_dirs, %w(tmp/pids)
 
 # or
 
