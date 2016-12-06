@@ -113,6 +113,11 @@ after 'deploy:published', 'delayed_job:restart' do
 end
 ```
 
+or add in Capfile
+```
+require 'capistrano/delayed-job'
+```
+
 Following setting is recommended to avoid stop/restart problem.
 See [Issue #16](https://github.com/platanus/capistrano3-delayed-job/issues/16) or [PR #22](https://github.com/platanus/capistrano3-delayed-job/pull/22) for more detail.
 
